@@ -1,11 +1,13 @@
-## My Project
+# GenAI Chatbot PoCs
 
-TODO: Fill this README out!
+This repository contains sample code demonstrating various use cases leveraging Amazon Generative AI Services. Each sample is a separate project with its own directory, and includes a basic Code to help users quickly set up a proof of concept.
 
-Be sure to:
+## Sample Proof of Concepts
 
-* Change the title in this README
-* Edit your repository description on GitHub
+1. **Amazon-Bedrock-Knowledgebase-Chatbot-POC:**
+   This sample demonstrates using Amazon Bedrock Knowledge Base feature to implement Generative AI Chatbot. In the end, you will have a chat interface to interact with Amazon Bedrock Knowledge Base.
+
+   </br><img src="amazon-bedrock-knowledgebase-chatbot-poc/streamlit-serverless/streamlit.jpg" alt="chatui" width="800" align="center"/></br>
 
 ## Security
 

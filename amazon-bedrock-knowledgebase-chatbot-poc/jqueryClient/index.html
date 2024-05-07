@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Chat Bot</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div style="margin:5vw;">
+		<h1> Main Page</h1>
+		<br>
+		<br>
+		<br>
+		<h3> It is you existing website with chat bubble located at Right-Bottom</h3>
+	</div>
+
+	<!-- Chatbot Pop Code Starts Here -->
+	<button class="chatbot-toggler">Bot</button>
+	<div class="chatBot">
+		<header>
+			<h2>AWS Bedrock KB Chat Bot</h2>
+			<span alt="Close"
+				id="cross"
+				onclick="cancel()">X</span>
+		</header>
+		<ul class="chatbox">
+			<li class="chat-incoming chat">
+				<i class="bi bi-cpu" style="font-size:24px;"></i>
+				<p>I am your Assistant powered by Generative AI <br>
+				   How can I assist you today?</p>
+			</li>
+		</ul>
+		<div class="chat-input" id="txtChatInput">
+			<textarea rows="0" cols="17"
+					placeholder="Enter a question..."></textarea>
+			<button id="sendBTN">Send</button>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js" defer></script>
+	<!-- Chatbot Pop Code Ends Here -->
+</body>
+
+</html>
