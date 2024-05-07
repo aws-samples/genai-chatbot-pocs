@@ -21,14 +21,20 @@ This project has 3 parts:
 
 To deploy Chatbot Knowledge Base, read [Chatbot Knowledge Base Instruction](/chatbot-knowledgebase/README.md). By the end of it, you will deploy a CloudFormation Stack with all components and a Lambda Function ```InvokeKnowledgeBase```.
 
-You can optionally continue to deploy a [Streamlit Serverless application for Chat Interface](/streamlit-serverless/README.md) following the instructions.
+### Option 1 : Deploying Stand-alone Application through Streamlit
+
+You can continue to deploy a [Streamlit Serverless application for Chat Interface](/streamlit-serverless/README.md) following the instructions.
 
 ***Note: If you continue to deploy Streamlit application, it internally calls the same Lambda Function ```InvokeKnowledgeBase``` to generate responses from Amazon Bedrock Knowledge Base.***
 
 In the end, you will have a chat interface to interact with Amazon Bedrock Knowledge Base.
 
-</br><img src="streamlit-serverless/streamlit.jpg" alt="chatui" width="800" align="center"/></br>
+</br><img src="./streamlit-serverless/streamlit.jpg" alt="chatui" width="800" align="center"/></br>
 
-Alternatively, you can use javascript based Chatbot UI to host Generative AI Chatbot 
+### Option 2 : Integrate Chatbot UI into existing website through jquery
+
+ You can deploy simple UI to host Generative AI Chatbot in existing website by following instruction as mentioned in [Deploy JQuery based Chatbot UI](./jqueryClient/README.md). 
+ 
+ The final solution would look like as below.  
 <br><br>
 <img src="jqueryClient/images/chatbot-popup.gif" align="center">
