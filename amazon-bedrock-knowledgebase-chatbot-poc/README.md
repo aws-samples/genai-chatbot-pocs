@@ -19,11 +19,11 @@ This project has 3 parts:
 2. Streamlit Serverless application for Chat Interface
 3. Use Javascript (JQuery) based Chatbot UI 
 
-To deploy Chatbot Knowledge Base, read [Chatbot Knowledge Base Instruction](/chatbot-knowledgebase/README.md). By the end of it, you will deploy a CloudFormation Stack with all components and a Lambda Function ```InvokeKnowledgeBase```.
+To deploy Chatbot Knowledge Base, read [Chatbot Knowledge Base Instruction](./chatbot-knowledgebase/README.md). By the end of it, you will deploy a CloudFormation Stack with all components and a Lambda Function ```InvokeKnowledgeBase```.
 
 ### Option 1 : Deploying Stand-alone Application through Streamlit
 
-You can continue to deploy a [Streamlit Serverless application for Chat Interface](/streamlit-serverless/README.md) following the instructions.
+You can continue to deploy a [Streamlit Serverless application for Chat Interface](./streamlit-serverless/README.md) following the instructions.
 
 ***Note: If you continue to deploy Streamlit application, it internally calls the same Lambda Function ```InvokeKnowledgeBase``` to generate responses from Amazon Bedrock Knowledge Base.***
 
