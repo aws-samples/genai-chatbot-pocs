@@ -33,7 +33,7 @@ Amazon Bedrock users need to request access to foundation models before they are
 
 To clone this GitHub repository run the following commands.
 
-```git clone <CLONE_URL>```
+```git clone https://github.com/aws-samples/genai-chatbot-pocs.git```
 
 ```cd amazon-bedrock-knowledgebase-chatbot-poc/chatbot-knowledgebase/```
 
