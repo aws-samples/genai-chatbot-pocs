@@ -6,7 +6,7 @@ This repository contains sample code demonstrating various use cases leveraging 
    
    This sample deploys a generative AI chatbot utilizing the Amazon Bedrock Knowledge Base feature to provide contextual information for a Large Language Model (LLM). To interact with the Large Language Model (LLM), it deploys a Streamlit application hosted on AWS.
 
-   </br><img src="contextual-chatbot-with-aws-hosted-interface/streamlit-serverless/streamlit.jpg" alt="chatui" width="800" align="center"/></br>
+   </br><img src="contextual-chatbot-with-aws-hosted-interface/streamlit-serverless/streamlit.png" alt="chatui" width="800" align="center"/></br>
 
 2. **[Contextual Chatbot with Self Hosted Interface](/contextual-chatbot-with-self-hosted-interface/)**
 

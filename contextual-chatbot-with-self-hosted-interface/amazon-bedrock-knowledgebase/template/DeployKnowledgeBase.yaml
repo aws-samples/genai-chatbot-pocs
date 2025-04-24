@@ -1,13 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A template for Knowledge base with Amazon Opensearch Serverless vector database.
 Parameters:
-  StackName:
-    Type: String
-    Default: amazon-bedrock-knowledge-base
-    Description: Name of the stack
-    AllowedPattern: ^[a-zA-Z][-a-zA-Z0-9]*$
-    ConstraintDescription: Stack name must start with a letter and can contain only letters, numbers, and hyphens.
-    MaxLength: 128
   KnowledgeBaseName:
     Default: bedrock-knowledgebase
     Type: String
