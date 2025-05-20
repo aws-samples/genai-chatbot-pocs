@@ -14,6 +14,13 @@ This repository contains sample code demonstrating various use cases leveraging 
 
    </br><img src="contextual-chatbot-with-self-hosted-interface/chat-widget/images/chatbot-popup.gif" alt="jq-chatui" width="800" align="center"/></br>
 
+3. **[Contextual Chatbot Application with Terraform](/contextual-chatbot-application-with-terraform/)**
+
+   This Sample delivers a comprehensive Infrastructure as Code solution using Terraform to deploy a secure Generative AI Chatbot application. The solution features robust user authentication and authorization through Amazon Cognito, coupled with efficient document management capabilities through Amazon S3 storage. At its core, the chatbot leverages Amazon Bedrock Knowledgebase to provide contextual conversations while implementing user-specific content filtering based on authentication status. The system includes document synchronization features and maintains a centralized knowledge repository for accurate responses. Through automated resource provisioning and configuration, organizations can rapidly deploy this production-ready AI chatbot solution that seamlessly integrates user management, knowledge base functionality, and intelligent conversation capabilities in a scalable architecture.
+
+   </br><img src="contextual-chatbot-application-with-terraform/RAGApplication.gif" alt="Contextual Chatbot Application Screenshot" width="800" align="center"/></br>
+
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
