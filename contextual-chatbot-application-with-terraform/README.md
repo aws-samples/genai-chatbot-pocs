@@ -113,28 +113,23 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 1. Navigate to AWS Console and Open the AWS Cloudshell 
 1. Install **terraform** on Aws Clould Shell 
     ```
-    git clone https://github.com/tfutils/tfenv.git ~/.tfenv
-    mkdir ~/bin
-    ln -s ~/.tfenv/bin/* ~/bin/
-    tfenv install
-    tfenv use
-    terraform --version # Should return the latest version of terraform 
-    ```
-1. remove source files 
-    ```
-    rm -rf ~/.tfenv
+    sudo yum install -y yum-utils
+    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    sudo yum -y install terraform
+    terraform --version 
     ```
 1. Clone the repo `https://github.com/aws-samples/genai-chatbot-pocs`
     ```
     git clone https://github.com/aws-samples/genai-chatbot-pocs.git
     ```
 
-1. Go to Folder `contenxtual-chatbot-application-with-terraform`
+1. Go to Folder `contextual-chatbot-application-with-terraform`
     ```
-    cd contenxtual-chatbot-application-with-terraform
+    cd genai-chatbot-pocs/contextual-chatbot-application-with-terraform
     ```
 1. run below terraform command to install application 
     ```
+    terraform -chdir="terraform" init
     terraform -chdir="terraform" apply -auto-approve -var="image_tag=1"
     ```
 1. you will get the cloudfront domain at end. Please use it to login ( user3 , Test@1234567)
@@ -168,12 +163,13 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
     git clone https://github.com/aws-samples/genai-chatbot-pocs.git
     ```
 
-1. Go to Folder `contenxtual-chatbot-application-with-terraform`
+1. Go to Folder `contextual-chatbot-application-with-terraform`
     ```
-    cd contenxtual-chatbot-application-with-terraform
+    cd genai-chatbot-pocs/contextual-chatbot-application-with-terraform
     ```
 1. run below terraform command to install application 
     ```
+    terraform -chdir="terraform" init
     terraform -chdir="terraform" apply -auto-approve -var="image_tag=1"
     ```
 1. you will get the cloudfront domain at end. Please use it to login ( user3 , Test@1234567)
