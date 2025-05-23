@@ -102,10 +102,11 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 
 ## Steps for Deployment
 
-**This solution has been tested in following regions.** You might need some tweaks if you are planning to deploy in any other AWS Region
- - **us-east-1**
- - **us-west-2**
+* **This solution has been tested in following regions.** You might need some tweaks if you are planning to deploy in any other AWS Region
+    - **us-east-1**
+    - **us-west-2**
 
+* **This Solution will be deployed in default VPC**
 
 ### Option 1 : Using AWS Cloud Shell 
 
@@ -130,7 +131,7 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 1. run below terraform command to install application 
     ```
     terraform -chdir="terraform" init
-    terraform -chdir="terraform" apply -auto-approve -var="image_tag=1"
+    terraform -chdir="terraform" apply -auto-approve -var="image_tag=1" -var="aws_region=us-east-1"
     ```
 1. you will get the cloudfront domain at end. Please use it to login ( user3 , Test@1234567)
 
@@ -146,18 +147,13 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 
 1. Navigate to your Terminal / Command window 
 1. Install **terraform** 
+     ```
+    sudo yum install -y yum-utils
+    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    sudo yum -y install terraform
+    terraform --version 
     ```
-    git clone https://github.com/tfutils/tfenv.git ~/.tfenv
-    mkdir ~/bin
-    ln -s ~/.tfenv/bin/* ~/bin/
-    tfenv install
-    tfenv use
-    terraform --version # Should return the latest version of terraform 
-    ```
-1. remove source files 
-    ```
-    rm -rf ~/.tfenv
-    ```
+
 1. Clone the repo `https://github.com/aws-samples/genai-chatbot-pocs`
     ```
     git clone https://github.com/aws-samples/genai-chatbot-pocs.git
@@ -170,9 +166,10 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 1. run below terraform command to install application 
     ```
     terraform -chdir="terraform" init
-    terraform -chdir="terraform" apply -auto-approve -var="image_tag=1"
+    terraform -chdir="terraform" apply -auto-approve -var="image_tag=1" -var="aws_region=us-east-1"
     ```
-1. you will get the cloudfront domain at end. Please use it to login ( user3 , Test@1234567)
+1. you will get the cloudfront domain at end. Please use it to login ( user3 , Test@1234567). It may take couple of mins before it is loaded on cloudfront domain.
+
 
 
 ## Cleanup 
