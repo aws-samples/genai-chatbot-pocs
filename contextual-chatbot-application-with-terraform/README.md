@@ -114,9 +114,11 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 1. Navigate to AWS Console and Open the AWS Cloudshell 
 1. Install **terraform** on Aws Clould Shell 
     ```
-    sudo yum install -y yum-utils
-    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
-    sudo yum -y install terraform
+     git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+    mkdir ~/bin
+    ln -s ~/.tfenv/bin/* ~/bin/
+    tfenv install
+    tfenv use
     terraform --version 
     ```
 1. Clone the repo `https://github.com/aws-samples/genai-chatbot-pocs`
@@ -146,11 +148,14 @@ This Proof of Concept (PoC) demonstrates the implementation of a Retrieval-Augme
 
 
 1. Navigate to your Terminal / Command window 
+
 1. Install **terraform** 
-     ```
-    sudo yum install -y yum-utils
-    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
-    sudo yum -y install terraform
+    ```
+    git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+    mkdir ~/bin
+    ln -s ~/.tfenv/bin/* ~/bin/
+    tfenv install
+    tfenv use
     terraform --version 
     ```
 
